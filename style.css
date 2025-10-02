@@ -1,1 +1,88 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 1rem;
+}
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.menu li {
+  margin: 0 15px;
+}
+.menu a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #fff;
+}
+
+/* Conteúdo */
+main {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Galeria */
+.gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.gallery img {
+  width: 250px;
+  border-radius: 10px;
+}
+
+/* Formulário */
+form {
+  max-width: 400px;
+  margin: auto;
+  text-align: left;
+}
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+button {
+  padding: 10px 15px;
+  border: none;
+  background: #222;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:hover {
+  background: #444;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0; left: 0;
+  width: 100%;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+}
 
