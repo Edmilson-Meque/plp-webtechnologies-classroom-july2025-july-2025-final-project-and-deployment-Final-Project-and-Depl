@@ -31,17 +31,24 @@ main {
   text-align: center;
 }
 
+
 /* Galeria */
 .gallery {
   display: flex;
   justify-content: center;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 20px;
 }
 .gallery img {
   width: 250px;
   border-radius: 10px;
+  transition: transform 0.3s;
 }
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
 
 /* Formulário */
 form {
